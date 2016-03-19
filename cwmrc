@@ -1,0 +1,30 @@
+# customize some bindings (C-control M-alt M1-button1)
+bind M-r        exec
+bind CM-r       reload
+bind CM-l       label
+bind CM-t       xterm -e "top -s 0.6"
+bind CM-m       menusearch
+mousebind M-1   window_move
+mousebind CM-1  window_resize
+
+# application menu
+command xmms    xmms 
+command firefox firefox
+command xpat2   xpat2
+command xmahjongg  xmahjongg
+command pysol  ./pysol
+command mc    xterm -e mc
+command viewnior  viewnior
+command  gimp  gimp
+command xcalc  xcalc
+command xterm    xterm 
+
+# groups predefined, use xprop to get these from each program
+#autogroup 2     Navigator,Firefox
+#autogroup 3     pidgin
+#autogroup 3     xchat
+#autogroup 3     xterm,silc
+#autogroup 4     xterm,mail
+
+# inherit current selected group
+sticky yes
